@@ -53,4 +53,12 @@ Last enter command "show dbs" to show available dbs in Mongo
 -----------------
 Project Structure
 -----------------
-There are 
+There are 3 folders namely: config, dao and models.
+
+Config contains the config.go file which represents the DB server
+
+DAO Folder contains the controller_dao.go file with necessary functions that tie into the main class app.go to assist various functions altering DB columns
+
+The models folder contains the skeleton for the meal plan and users respectively.
+
+Last the app.go file contains the core functions and routing for the API endpoints
