@@ -30,7 +30,7 @@ If running this application on a MAC OS..Hit Cmd + Shift + H and create a GO fol
 
 In the GO folder, create 3 sub folders  bin, pkg and src. Most of the code logic will be in src.
 
-Used Gorilla MUX for web config and imported it into necessary files
+Installed Gorilla MUX for web configuration and project files
 
 Set up MongoDB from Terminal using the following command: go get gopkg.in/mgo.v2
 
@@ -50,3 +50,7 @@ Enter command : "mongo"
 
 Last enter command "show dbs" to show available dbs in Mongo
 
+-----------------
+Project Structure
+-----------------
+There are 
