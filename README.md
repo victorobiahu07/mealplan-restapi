@@ -30,7 +30,11 @@ If running this application on a MAC OS..Hit Cmd + Shift + H and create a GO fol
 
 In the GO folder, create 3 sub folders  bin, pkg and src. Most of the code logic will be in src.
 
-Installed Gorilla MUX for web configuration and project files
+Installed Gorilla MUX and BurntSushi/toml files for web configuration and project files using the following commands
+
+Enter command: go get github.com/gorilla to install Gorilla/MUX
+
+Enter command: go get github.com/BurntSushi/toml to install extra config files
 
 Set up MongoDB from Terminal using the following command: go get gopkg.in/mgo.v2
 
