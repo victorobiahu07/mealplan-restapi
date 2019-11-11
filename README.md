@@ -65,4 +65,43 @@ DAO Folder contains the controller_dao.go that help alter the Data access object
 
 The models folder contains the skeleton for the meal plan and users respectively.
 
-Last the app.go file contains the core functions and routing for the API endpoints
+Last the app.go file contains the core functions and routing for the following API endpoints
+
+------------
+GET METHODS 
+------------
+
+getAllMealPlans param: meal plans
+
+getAllCustomers param: user 
+
+getMealPlanById param: mealPlanID
+
+getMealsByMarket param: market
+
+getCustomer param: users/id
+
+-------------
+POST METHODS
+-------------
+
+createMealPlan params: mealPlanID
+
+createCustomer param: user
+
+-----------
+PUT METHODS
+-----------
+
+updateMealPlan param: mealPlanID
+ 
+updateCustomer param: user
+
+--------------
+DELETE METHODS
+--------------
+
+deleteMealPlan param: mealPlanID
+ 
+deleteCustomer param: user
+
