@@ -25,7 +25,9 @@ The service should also include a special GET to retrieve the meal plan for a gi
 Guidelines for Linux 
 --------------------
 Install a textEditor of preference (In my case I used Atom) 
+
 If running this application on a MAC OS..Hit Cmd + Shift + H and create a GO folder.
+
 In the GO folder, create 3 sub folders  bin, pkg and src. Most of the code logic will be in src.
 Used Gorilla MUX for web config and imported it into necessary files.
 Set up MongoDB from Terminal using the following command: go get gopkg.in/mgo.v2
