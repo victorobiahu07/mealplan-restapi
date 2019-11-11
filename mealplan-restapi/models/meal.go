@@ -10,6 +10,9 @@ type Semester struct {
 	StartDate string `bson:"start_date" json:"start_date" `
 	EndDate   string `bson:"end_date" json:"end_date" `
 }
+
+
+//included third trimester JSON property to enable inclusion of extra trimester in schools with different academic calendars
 type Meal struct {
 	ID                    bson.ObjectId `bson:"_id" json:"id"`
 	Name                  string        `bson:"name" json:"name"`
@@ -18,5 +21,6 @@ type Meal struct {
 	SpringSemesterDates   Semester      `bson:"spring_semester" json:"spring_semester"`
 	FallSemesterDates     Semester      `bson:"fall_semester" json:"fall_semester"`
 	Market                string        `bson:"market" json:"market"`
-	ThirdAcademicSemester Semester      `bson:"third_semester" json:"third_semester"`
+	//ThirdAcademicSemester Semester      `bson:"third_semester" json:"third_semester"`
+	ThirdTrimester        Semester      `bson:"third_trimester" json:"third_trimester"`
 }
