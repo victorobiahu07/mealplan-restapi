@@ -50,7 +50,6 @@ func (m *ControllerDAO) FindAllMealsOrderedByMarket() ([]Meal, error) {
 // Find list of meals ordered by weekly cost
 //newly added
 func (m *ControllerDAO) FindAllMealsOrderedByWeeklyPrice() ([]Meal, error) {
-
 	var meals []Meal
 	err := db.C(COLLECTION_meal).Find(bson.M{}).Sort("weekly_cost").All(&meals)
 	return meals, err
@@ -73,7 +72,7 @@ func (m *ControllerDAO) FindMealById(id string) (Meal, error) {
 
 // // Find a meal by its market
 func (m *ControllerDAO) FindAllMealsByMarket(market string) ([]Meal, error) {
-	// **NEW**
+
 	var meals []Meal
 	err := db.C(COLLECTION_meal).Find(bson.M{"market": market}).All(&meals)
 	return meals, err
