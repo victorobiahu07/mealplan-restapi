@@ -56,7 +56,7 @@ func getMealsByMarket(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(params["market"])
 	meals, err := dao.FindAllMealsByMarket(params["market"])
 	if err != nil {
-		respondWithError(w, http.StatusBadRequest, "Invalid Meal market")
+		respondWithError(w, http.StatusBadRequest, "Invalid Meal request for market")
 		return
 	}
 	respondWithJson(w, http.StatusOK, meals)
