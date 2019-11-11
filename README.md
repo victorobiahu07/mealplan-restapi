@@ -29,14 +29,24 @@ Install a textEditor of preference (In my case I used Atom)
 If running this application on a MAC OS..Hit Cmd + Shift + H and create a GO folder.
 
 In the GO folder, create 3 sub folders  bin, pkg and src. Most of the code logic will be in src.
-Used Gorilla MUX for web config and imported it into necessary files.
+
+Used Gorilla MUX for web config and imported it into necessary files
+
 Set up MongoDB from Terminal using the following command: go get gopkg.in/mgo.v2
+
 To install mongoDB Community Edition correctly via Linux on Mac OS using Homebrew run the following commands sequentially
+
 brew tap mongodb/brew
+
 brew install mongodb-community@4.2
+
 mongod --config /usr/local/etc/mongod.conf --fork (To run mongo in the background include --fork)
+
 brew services start mongodb-community@4.2
+
 ps -ef | grep mongod (verifies MongoDB is running correctly)
+
 Enter command : "mongo" 
+
 Last enter command "show dbs" to show available dbs in Mongo
 
