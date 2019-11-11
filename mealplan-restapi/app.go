@@ -28,6 +28,27 @@ func getAllMealPlans(w http.ResponseWriter, r *http.Request) {
 	respondWithJson(w, http.StatusOK, meals)
 }
 
+// GET list of all meals ordered by market
+func getAllMealsOrderedByMarket(w http.ResponseWriter, r *http.Request) {
+	meals, err := dao.FindAllMealsOrderedByMarket()
+	if err != nil {
+		respondWithError(w, http.StatusInternalServerError, err.Error())
+		return
+	}
+	respondWithJson(w, http.StatusOK, meals)
+}
+
+// GET list of all meals ordered by weeklyCost
+func getAllMealsOrderedByWeeklyCost(w http.ResponseWriter, r *http.Request) {
+	meals, err := dao.FindAllMealsOrderedByWeeklyPrice()
+	if err != nil {
+		respondWithError(w, http.StatusInternalServerError, err.Error())
+		return
+	}
+	respondWithJson(w, http.StatusOK, meals)
+}
+
+
 // GET list of customers
 func getAllCustomers(w http.ResponseWriter, r *http.Request) {
 	users, err := dao.FindAllUsers()
@@ -217,6 +238,9 @@ func main() {
 	r.HandleFunc("/meals/{id}", getMealPlanById).Methods("GET")
 	r.HandleFunc("/mealsbymarket/{market}", getMealsByMarket).Methods("GET")
 	r.HandleFunc("/users/{id}", getCustomer).Methods("GET")
+	r.HandleFunc("/mealsOrderedByMarket", getAllMealsOrderedByMarket).Methods("GET")
+	r.HandleFunc("/mealsOrderedByWeeklyCost", getAllMealsOrderedByWeeklyCost).Methods("GET")
+
 	http.ListenAndServe(":8080", r)
 
 	if err := http.ListenAndServe(":8080", r); err != nil {
