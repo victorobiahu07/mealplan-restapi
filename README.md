@@ -4,7 +4,7 @@ November 7th 2019
 
 Web app for handling meal plans for various consumer markets
 ------
-PROMPT|
+PROMPT
 ------
 A company would like to sell meal plans.As part of the build to support meal plans, we will need a small webapp to allow internal staff to enter and edit meal plan information. Each plan will have a name, weekly cost, spring semester start and end dates, and fall semester start and end dates.  
 Each plan will be associated with only one of the markets in which we operate and will contain a 'market' key which will store the name of one of four markets: Syracuse, Drexel, Colgate, or Maryland.  In addition, some of the schools where we operate have trimesters rather than semesters, so internal users will need to have the option to enter the start and end date for a third academic period.
