@@ -85,6 +85,10 @@ getMealsByMarket param: market
 
 getCustomer param: users/id
 
+getAllMealsOrderedByMarket
+
+getAllMealsOrderedByWeeklyCost
+ 
 -------------
 POST METHODS
 -------------
