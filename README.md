@@ -54,6 +54,10 @@ Enter command : "mongo"
 
 Last enter command "show dbs" to show available dbs in Mongo
 
+To run the main program and test endpoints in API enter command: "go run app.go"
+
+I have included sample JSON schema to guide for testing the GET, POST, PUT and DELETE methods. I included a sample schema for a market with a regular semester schedule and another for the consumer market with a trimester including start and end dates for the trimeseter. 
+
 -----------------
 Project Structure
 -----------------
