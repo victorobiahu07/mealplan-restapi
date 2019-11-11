@@ -64,7 +64,7 @@ func getMealPlanById(w http.ResponseWriter, r *http.Request) {
 	params := mux.Vars(r)
 	meal, err := dao.FindMealById(params["id"])
 	if err != nil {
-		respondWithError(w, http.StatusBadRequest, "Invalid Meal ID")
+		respondWithError(w, http.StatusBadRequest, "Invalid meal plan ID")
 		return
 	}
 	respondWithJson(w, http.StatusOK, meal)
@@ -77,7 +77,7 @@ func getMealsByMarket(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(params["market"])
 	meals, err := dao.FindAllMealsByMarket(params["market"])
 	if err != nil {
-		respondWithError(w, http.StatusBadRequest, "Invalid Meal request for market")
+		respondWithError(w, http.StatusBadRequest, "Invalid meal plan request for market")
 		return
 	}
 	respondWithJson(w, http.StatusOK, meals)
@@ -90,7 +90,7 @@ func getMealBySemester(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(params["semester"])
 	meals, err := dao.FindAllMealsByMarket(params["semester"])
 	if err != nil {
-		respondWithError(w, http.StatusBadRequest, "Invalid Meal plan in this semester")
+		respondWithError(w, http.StatusBadRequest, "Invalid meal plan in this semester")
 		return
 	}
 	respondWithJson(w, http.StatusOK, meals)
