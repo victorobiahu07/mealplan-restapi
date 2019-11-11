@@ -20,7 +20,6 @@ type Meal struct {
 	SpringSemesterDates   Semester      `bson:"spring_semester" json:"spring_semester"`
 	FallSemesterDates     Semester      `bson:"fall_semester" json:"fall_semester"`
 	Market                string        `bson:"market" json:"market"`
-	//ThirdAcademicSemester Semester      `bson:"third_semester" json:"third_semester"`
 	ThirdTrimester        Semester      `bson:"third_trimester" json:"third_trimester"`
 }
 
@@ -41,9 +40,9 @@ type Meal struct {
 		"start_date":"9-1-19",
 		"end_date":"12-5-19"
 	}
-}
+}*/
 
-//this includes trimesters
+/*this includes trimesters
 {
 	"id":"1a234bc57d4",
 	
@@ -65,5 +64,4 @@ type Meal struct {
 		"end_date":"8-1-19"
 	}
 }
-
 */
